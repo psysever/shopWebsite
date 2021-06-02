@@ -119,9 +119,6 @@ function App() {
               저는 여전히 많은 기능들을 이 리액트 사이트에 올리도록 노력하고
               있습니다.<br></br>부족한 저의 사이트에 방문해 주셔서 감사합니다.
               <br></br>사이트 위쪽 상단에 HOME버튼을 누르시면 이동됩니다.
-              <br></br>
-              제품 사진을 클릭하면 사진이 중복되는 오류가 있습니다.곧 오류
-              수정을 하겠습니다.
             </h5>
           </p>
         </Route>
@@ -143,7 +140,7 @@ function Card(props) {
     >
       <img
         src={
-          "https://codingapple1.github.io/shop/shoes" + (props.i + 1) + ".jpg"
+          "https://psysever.github.io/shoespic/shop/shoes" + props.i + ".jpg"
         }
         width="100%"
       />
