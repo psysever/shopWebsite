@@ -21,10 +21,7 @@ function reducer2(state = alertiv, action) {
   return state;
 }
 
-let iv = [
-  { id: 0, name: "Goodshoes", quan: 2 },
-  { id: 1, name: "Goodshoes", quan: 1 },
-];
+let iv = [{ id: 0, name: "white and black", quan: 1 }];
 
 function reducer(state = iv, action) {
   if (action.type === "PDUpdate") {

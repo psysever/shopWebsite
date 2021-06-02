@@ -27,7 +27,7 @@ function App() {
               <Link to="/">Home</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/detail">Detail</Link>
+              <Link to="/detail/2">Detail</Link>
             </Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -88,7 +88,7 @@ function App() {
           </div>
         </Route>
 
-        <Route path="/detail/:id">
+        <Route exact path="/detail/:id">
           <stockcontext.Provider value={stock}>
             <Detail shoes={shoes} stock={stock} stockChange={stockChange} />
           </stockcontext.Provider>
@@ -96,6 +96,34 @@ function App() {
 
         <Route path="/cart">
           <Cart></Cart>
+        </Route>
+        <Route exact path="/:id">
+          <br></br>
+          <br></br>
+          <br></br>
+          <div>
+            <h5>
+              This is CHANG MO JUNG. Thanks for visitting my website.<br></br>I
+              m'still trying to update set lots of function on this react web
+              site.<br></br>
+              If you press the HOME button at the top of the site, it will be
+              moved.
+            </h5>
+          </div>
+          <br></br>
+          <hr />
+          <br></br>
+          <p>
+            <h5>
+              안녕하세요 정창모입니다.<br></br>
+              저는 여전히 많은 기능들을 이 리액트 사이트에 올리도록 노력하고
+              있습니다.<br></br>부족한 저의 사이트에 방문해 주셔서 감사합니다.
+              <br></br>사이트 위쪽 상단에 HOME버튼을 누르시면 이동됩니다.
+              <br></br>
+              제품 사진을 클릭하면 사진이 중복되는 오류가 있습니다.곧 오류
+              수정을 하겠습니다.
+            </h5>
+          </p>
         </Route>
       </Switch>
     </div>
